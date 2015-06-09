@@ -1,17 +1,53 @@
 /* Circular icons */
+.circle-bar {
+  height: 128px;
+  cursor: default;
+}
+
 .circular-icon {
+  height: 128px;
+  width: 128px;
+}
+
+.circular-icon-img {
+  position: relative;
+
   width: 64px;
   height: 64px;
+
   border-radius: 32px;
   box-shadow: 0 0 1px rgba(0, 0, 0, .7);
-  transition: all 0.2s ease-out;
+
+  margin-left: 2.5px;
+  margin-right: 2.5px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+
+  transition: all 0.2s ease;
+
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+  -moz-filter: grayscale(1);
+  -o-filter: grayscale(1);
+  -ms-filter: grayscale(1);
 }
 
-.circular-icon:hover {
-  width: 96px;
-  height: 96px;
-  border-radius: 48px;
-  box-shadow: 0 0 1px rgba(0, 0, 0, .7);
+.circular-icon-img:hover {
+  width: 84px;
+  height: 84px;
+
+  border-radius: 42px;
+
+  margin-top: 22px;
+  margin-bottom: 22px;
+  margin-left: -2.5px;
+  margin-right: -2.5px;
+
+  transition: all 0.2s ease;
+
+  filter: none;
+  -webkit-filter: none;
+  -moz-filter: none;
+  -o-filter: none;
+  -ms-filter: none;
 }
-
-
