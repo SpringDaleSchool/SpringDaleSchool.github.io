@@ -1,0 +1,17 @@
+/* Circular icons */
+.circular-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 32px;
+  box-shadow: 0 0 1px rgba(0, 0, 0, .7);
+  transition: all 0.2s ease-out;
+}
+
+.circular-icon:hover {
+  width: 96px;
+  height: 96px;
+  border-radius: 48px;
+  box-shadow: 0 0 1px rgba(0, 0, 0, .7);
+}
+
+
