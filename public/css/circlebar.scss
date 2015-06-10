@@ -47,9 +47,50 @@ $circle-bar-icon-zoom: 1.3125;
   margin-right: 1px;
 }
 
+.circle-bar-icon {
+  width: $circle-bar-icon-size;
+  height: $circle-bar-icon-size;
+
+  position: absolute;
+  overflow: hidden;
+  display: inline-block;
+  background-size: 100% 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  border-radius: 50%;
+
+  @include transition(all 0.2s ease-out);
+  @include filter(grayscale(1));
+}
+
+.circle-bar-shadow {
+  width: $circle-bar-icon-size;
+  height: $circle-bar-icon-size;
+
+  position: absolute;
+  display: inline-block;
+  text-indent: -9000px;
+
+  border-radius: 50%;
+  @include transition(all 0.4s ease);
+}
+
+.circle-bar-text {
+  line-height: $circle-bar-icon-size;
+  color: white;
+
+  visibility: visible;
+  opacity: 1;
+
+  @include text-shadow(black);
+  @include transition(opacity 0.2s ease-in-out);
+}
+  
 .circle-bar-link {
   position: absolute;
 
+  display: block;
   margin-top: ($circle-bar-height - $circle-bar-icon-size)/2;
 
   @include transition(all 0.2s ease);
@@ -90,44 +131,4 @@ $circle-bar-icon-zoom: 1.3125;
       @include transition(opacity 0.2s ease-in-out);
     }
   }
-
-  .circle-bar-text {
-    line-height: $circle-bar-icon-size;
-    color: white;
-
-    visibility: visible;
-    opacity: 1;
-
-    @include text-shadow(black);
-    @include transition(opacity 0.2s ease-in-out);
-  }
-}
-
-.circle-bar-shadow {
-  width: $circle-bar-icon-size;
-  height: $circle-bar-icon-size;
-
-  position: absolute;
-  display: inline-block;
-  text-indent: -9000px;
-
-  border-radius: 50%;
-  @include transition(all 0.4s ease);
-}
-
-.circle-bar-icon {
-  width: $circle-bar-icon-size;
-  height: $circle-bar-icon-size;
-
-  position: absolute;
-  overflow: hidden;
-  display: inline-block;
-  background-size: 100% 100%;
-  background-position: center center;
-  background-repeat: no-repeat;
-
-  border-radius: 50%;
-
-  @include transition(all 0.2s ease-out);
-  @include filter(grayscale(1));
 }
