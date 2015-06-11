@@ -8,7 +8,7 @@
 
 - name: LinkedIn
   link: https://es.linkedin.com/in/jsidrach
-  icon: linkedin.png
+  icon: jobs.png
 
 - name: Projects
   link: /projects
@@ -20,4 +20,4 @@
 
 - name: Mail
   link: mailto:juan.sidrach@gmail.com
-  icon: gmail.png
+  icon: mail.png
