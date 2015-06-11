@@ -6,7 +6,7 @@ description: "Example of description"
 # The subpath of your site. Use "" if you're hosting a blog at the root level.
 baseurl: ""
 # The base hostname & protocol for your site.
-url: "username.github.io"
+url: "jsidrach.github.io"
 
 # Articles per page
 paginate: 3
@@ -17,7 +17,7 @@ paginate_path: /projects/page:num
 exclude: ["README.md", "CHANGELOG.md", "Gemfile", "Gemfile.lock", "LICENSE"]
 
 # Makes pretty (descriptive) permalinks.
-permalink: :pretty
+permalink: pretty
 
 # Sass configuration
 sass:

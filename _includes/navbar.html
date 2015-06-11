@@ -5,7 +5,7 @@
         <div class="circle-bar-element">
           <a href="{{ circle.link | prepend: site.baseurl }}" class="circle-bar-link">
             <span class="circle-bar-shadow"></span>
-            <div class="circle-bar-icon" style="background-image:url({{ circle.icon | prepend:'icons/' | prepend:site.baseurl }});"></div>
+            <div class="circle-bar-icon" style="background-image:url({{ circle.icon | prepend:'/public/icons/' | prepend:site.baseurl }});"></div>
             <span class="circle-bar-text">{{ circle.name }}<span>
           </a>
         </div>
