@@ -1,0 +1,15 @@
+<div class="row">
+  <div class="col-md-6 col-md-offset-2 text-center">
+    <div class="circle-bar">
+      {% for circle in site.data.circlebar %}
+        <div class="circle-bar-element">
+          <a href="{{ circle.link | prepend: site.baseurl }}" class="circle-bar-link">
+            <span class="circle-bar-shadow"></span>
+            <div class="circle-bar-icon" style="background-image:url({{ circle.icon | prepend:'icons/' | prepend:site.baseurl }});"></div>
+            <span class="circle-bar-text">{{ circle.name }}<span>
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

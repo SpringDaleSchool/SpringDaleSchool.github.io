@@ -31,6 +31,7 @@
 $circle-bar-height: 96px;
 $circle-bar-icon-size: 64px;
 $circle-bar-icon-zoom: 1.3125;
+$circle-bar-shadow-size: 96px;
 
 .circle-bar {
   height: $circle-bar-height;
@@ -61,7 +62,7 @@ $circle-bar-icon-zoom: 1.3125;
   border-radius: 50%;
 
   @include transition(all 0.2s ease-out);
-  @include filter(grayscale(1));
+  @include filter(grayscale(1) blur(1px));
 }
 
 .circle-bar-shadow {
@@ -78,15 +79,17 @@ $circle-bar-icon-zoom: 1.3125;
 
 .circle-bar-text {
   line-height: $circle-bar-icon-size;
+  width: $circle-bar-icon-size;
   color: white;
 
+  position: absolute;
   visibility: visible;
   opacity: 1;
 
   @include text-shadow(black);
   @include transition(opacity 0.2s ease-in-out);
 }
-  
+
 .circle-bar-link {
   position: absolute;
 
@@ -104,11 +107,11 @@ $circle-bar-icon-zoom: 1.3125;
     @include transition(all 0.2s ease-out);
 
     .circle-bar-shadow {
-      width: $circle-bar-height;
-      height: $circle-bar-height;
+      width: $circle-bar-shadow-size;
+      height: $circle-bar-shadow-size;
 
-      margin-top: -($circle-bar-height - $circle-bar-icon-zoom*$circle-bar-icon-size)/2;
-      margin-left: -($circle-bar-height - $circle-bar-icon-zoom*$circle-bar-icon-size)/2;
+      margin-top: -($circle-bar-shadow-size - $circle-bar-icon-zoom*$circle-bar-icon-size)/2;
+      margin-left: -($circle-bar-shadow-size - $circle-bar-icon-zoom*$circle-bar-icon-size)/2;
 
       opacity: 0.6;
       background-color: #CCC;

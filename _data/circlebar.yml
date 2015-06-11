@@ -1,0 +1,21 @@
+- name: GitHub
+  link: https://github.com/jsidrach
+  icon: github.png
+
+- name: LinkedIn
+  link: https://es.linkedin.com/in/jsidrach
+  icon: linkedin.png
+
+- name: Projects
+  link: /projects
+  icon: projects.png
+
+- name: CV
+  link: /data/cv.pdf
+  icon: cv.png
+
+- name: Mail
+  link: mailto:juan.sidrach@gmail.com
+  icon: gmail.png
+
+

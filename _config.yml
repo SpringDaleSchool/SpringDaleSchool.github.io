@@ -19,8 +19,9 @@ exclude: ["README.md", "CHANGELOG.md", "Gemfile", "Gemfile.lock", "LICENSE"]
 # Makes pretty (descriptive) permalinks.
 permalink: :pretty
 
-# Minimize sass output (css)
+# Sass configuration
 sass:
+  sass_dir: _sass
   style: compressed
 
 # Default templates
