@@ -2,6 +2,10 @@
   link: /
   icon: about.png
 
+- name: Projects
+  link: /projects
+  icon: projects.png
+
 - name: GitHub
   link: https://github.com/jsidrach
   icon: repo.png
@@ -9,10 +13,6 @@
 - name: LinkedIn
   link: https://es.linkedin.com/in/jsidrach
   icon: jobs.png
-
-- name: Projects
-  link: /projects
-  icon: projects.png
 
 - name: CV
   link: /data/cv.pdf

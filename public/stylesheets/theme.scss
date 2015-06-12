@@ -18,6 +18,60 @@
           transition: $transition;
 }
 
+// Fade in effect
+@mixin fade-in($delay, $duration) {
+
+  -webkit-animation: fadein $duration;
+     -moz-animation: fadein $duration;
+       -o-animation: fadein $duration;
+          animation: fadein $duration;
+
+  -webkit-animation-delay: $delay;
+     -moz-animation-delay: $delay;
+       -o-animation-delay: $delay;
+          animation-delay: $delay;
+
+  -webkit-animation-fill-mode: both;
+     -moz-animation-fill-mode: both;
+       -o-animation-fill-mode: both;
+          animation-fill-mode: both;
+
+  opacity: 0;
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 // Customize bootstrap variables here
 // Roboto font
 $font-family-sans-serif:   "Roboto Slab";
@@ -28,18 +82,23 @@ $footer-fixed-height:      25px;
 @import "bootstrap";
 
 // Theme itself
+
 // Top style
 .titles {
+  padding-top: 50px;
+
   color: white;
   text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
-  padding-top: 50px;
+
+  @include fade-in(0.2s, 0.3s);
 }
 
 .title {
+  margin-bottom: 0;
   padding: 0 0 0 0;
+
   font-size: 6em;
   font-weight: 500;
-  margin-bottom: 0;
 }
 
 .subtitle {
@@ -49,6 +108,8 @@ $footer-fixed-height:      25px;
 .navbar-icons {
   background-color: transparent;
   border-color: transparent;
+
+  @include fade-in(0.2s, 0.3s);
 }
 
 // Bottom footer
@@ -65,6 +126,8 @@ html, body {
 
 .footer, .push {
   height: $footer-fixed-height;
+
+  @include fade-in(0.2s, 0.3s);
 }
 
 .footer-text {
@@ -82,6 +145,8 @@ html, body {
 
   background-color: rgba(255, 255, 255, 0.85);
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+
+  @include fade-in(0.2s, 0.3s);
 }
 
 // Background image
