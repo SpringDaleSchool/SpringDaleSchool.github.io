@@ -90,7 +90,7 @@ $footer-fixed-height:      25px;
   color: white;
   text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
 
-  @include fade-in(0.2s, 0.3s);
+  @include fade-in(0.5s, 2s);
 }
 
 .title {
@@ -109,7 +109,7 @@ $footer-fixed-height:      25px;
   background-color: transparent;
   border-color: transparent;
 
-  @include fade-in(0.2s, 0.3s);
+  @include fade-in(0.5s, 2s);
 }
 
 // Bottom footer
@@ -127,7 +127,7 @@ html, body {
 .footer, .push {
   height: $footer-fixed-height;
 
-  @include fade-in(0.2s, 0.3s);
+  @include fade-in(0.5s, 2s);
 }
 
 .footer-text {
@@ -146,7 +146,7 @@ html, body {
   background-color: rgba(255, 255, 255, 0.85);
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
 
-  @include fade-in(0.2s, 0.3s);
+  @include fade-in(0.5s, 2s);
 }
 
 // Background image
