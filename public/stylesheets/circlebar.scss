@@ -62,7 +62,7 @@ $circle-bar-shadow-size: 96px;
   border-radius: 50%;
 
   @include transition(all 0.2s ease-out);
-  @include filter(grayscale(1) blur(1px));
+  //@include filter(grayscale(1) blur(1px));
 }
 
 .circle-bar-shadow {
@@ -78,16 +78,16 @@ $circle-bar-shadow-size: 96px;
 }
 
 .circle-bar-text {
-  line-height: $circle-bar-icon-size;
-  width: $circle-bar-icon-size;
+  line-height: $circle-bar-icon-zoom*$circle-bar-icon-size;
+  width: $circle-bar-icon-zoom*$circle-bar-icon-size;
 
   color: white;
-  font-size: 0.9em;
+  font-size: 1.2em;
   font-weight: bold;
 
   position: absolute;
-  visibility: visible;
-  opacity: 1;
+  visibility: hidden;
+  opacity: 0;
 
   @include text-shadow(black);
   @include transition(opacity 0.2s ease-in-out);
@@ -127,12 +127,12 @@ $circle-bar-shadow-size: 96px;
       line-height: $circle-bar-icon-zoom*$circle-bar-icon-size;
 
       border-radius: 50%;
-      @include filter(none);
+      //@include filter(none);
     }
 
     .circle-bar-text {
-      visibility: hidden;
-      opacity: 0;
+      visibility: visible;
+      opacity: 1;
 
       @include transition(opacity 0.2s ease-in-out);
     }

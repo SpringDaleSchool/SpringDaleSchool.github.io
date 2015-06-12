@@ -19,10 +19,10 @@
 }
 
 // Customize bootstrap variables here
-// Open Sans font
-$font-family-sans-serif: "Open Sans";
-// Background color
-$body-bg:               #CCC !default;
+// Roboto font
+$font-family-sans-serif:   "Roboto Slab";
+// Footer height
+$footer-fixed-height:      25px;
 
 // Import bootstrap
 @import "bootstrap";
@@ -31,13 +31,13 @@ $body-bg:               #CCC !default;
 // Top style
 .titles {
   color: white;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
   padding-top: 50px;
 }
 
 .title {
   padding: 0 0 0 0;
-  font-size: 5em;
+  font-size: 6em;
   font-weight: 500;
   margin-bottom: 0;
 }
@@ -46,23 +46,49 @@ $body-bg:               #CCC !default;
   margin: 0 0 15px 0;
 }
 
+.navbar-icons {
+  background-color: transparent;
+  border-color: transparent;
+}
+
 // Bottom footer
 html, body {
-    height: 100%;
+  height: 100%;
 }
 
 .wrapper {
-    min-height: 100%;
-    height: auto !important;
-    height: 100%;
-    margin: -25px auto -25px; /* the bottom margin is the negative value of the footer's height */
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -1.5*$footer-fixed-height;
 }
 
 .footer, .push {
-    height: 25px; /* .push must be the same height as .footer */
+  height: $footer-fixed-height;
+}
+
+.footer-text {
+  color: white;
+  text-shadow: 1px 1px #000;
+  a {
+    color: #A8E4FF;
+  }
 }
 
 // Boxes
-.container {
+.box {
+  padding: 30px;
+  text-align: justify;
 
+  background-color: rgba(255, 255, 255, 0.85);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+}
+
+// Background image
+html, body {
+  background: url("../images/background.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
