@@ -1,7 +1,7 @@
 # Title of the site
-title: "A simple about page"
+title: "J. Sid"
 # Description of the site
-description: "Example of description"
+description: "I make things"
 
 # The subpath of your site. Use "" if you're hosting a blog at the root level.
 baseurl: ""

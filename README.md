@@ -13,5 +13,3 @@ TODO:
   - projects.html
     - incluir todos los proyectos, con layout default
     - revisar paginación
-  - Buscar iconos
-  - Generación automática de la cabecera a partir del _config.yml

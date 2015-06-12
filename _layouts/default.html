@@ -12,13 +12,17 @@
   <body>
     <div class="wrapper">
       <section>
+        {% include title.html %}
         {% include navbar.html %}
 
-        {{ content }}
+        <div class="container">
+          {{ content }}
+        </div>
 
-        {% include footer.html %}
+        <div clas="push"></div>
       </section>
     </div>
+    {% include footer.html %}
     <script src="{{ "/public/javascripts/jquery.min.js" | prepend:site.baseurl }}"></script>
     <script src="{{ "/public/javascripts/bootstrap.min.js" | prepend:site.baseurl }}"></script>
   </body>

@@ -3,9 +3,66 @@
 # only Main files contain this front matter, not partials.
 ---
 
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+
+@mixin transition($transition) {
+  -webkit-transition: $transition;
+     -moz-transition: $transition;
+      -ms-transition: $transition;
+          transition: $transition;
+}
+
 // Customize bootstrap variables here
+// Open Sans font
+$font-family-sans-serif: "Open Sans";
+// Background color
+$body-bg:               #CCC !default;
 
 // Import bootstrap
 @import "bootstrap";
 
 // Theme itself
+// Top style
+.titles {
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+  padding-top: 50px;
+}
+
+.title {
+  padding: 0 0 0 0;
+  font-size: 5em;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.subtitle {
+  margin: 0 0 15px 0;
+}
+
+// Bottom footer
+html, body {
+    height: 100%;
+}
+
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: -25px auto -25px; /* the bottom margin is the negative value of the footer's height */
+}
+
+.footer, .push {
+    height: 25px; /* .push must be the same height as .footer */
+}
+
+// Boxes
+.container {
+
+}
