@@ -3,22 +3,9 @@
 # only Main files contain this front matter, not partials.
 ---
 
-@mixin border-radius($radius) {
-  -webkit-border-radius: $radius;
-     -moz-border-radius: $radius;
-      -ms-border-radius: $radius;
-          border-radius: $radius;
-}
-
-
-@mixin transition($transition) {
-  -webkit-transition: $transition;
-     -moz-transition: $transition;
-      -ms-transition: $transition;
-          transition: $transition;
-}
-
-// Fade in effect
+//
+// Mixins
+//
 @mixin fade-in($delay, $duration) {
 
   -webkit-animation: fadein $duration;
@@ -72,16 +59,30 @@
     }
 }
 
-// Customize bootstrap variables here
+//
+// Custom bootstrap variables
+//
+
 // Roboto font
 $font-family-sans-serif:   "Roboto Slab";
-// Footer height
-$footer-fixed-height:      25px;
+// Background color
+$body-bg:                  transparent !default;
+// Global textual link color
+$link-color:               #A8E4FF !default;
+// Link hover color
+$link-hover-color:         darken($link-color, 10%) !default;
+// Link hover decoration.
+$link-hover-decoration:    underline !default;
 
 // Import bootstrap
 @import "bootstrap";
 
-// Theme itself
+//
+// Theme
+//
+
+// Footer height
+$footer-fixed-height:      60px;
 
 // Top style
 .titles {
@@ -113,19 +114,21 @@ $footer-fixed-height:      25px;
 }
 
 // Bottom footer
-html, body {
-  height: 100%;
-}
-
-.wrapper {
+html {
+  position: relative;
   min-height: 100%;
-  height: auto !important;
-  height: 100%;
-  margin: 0 auto -1.5*$footer-fixed-height;
 }
 
-.footer, .push {
-  height: $footer-fixed-height;
+body {
+  margin-bottom: $footer-fixed-height;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 0.75*$footer-fixed-height;
+  padding-top: 0.25*$footer-fixed-height;
 
   @include fade-in(0.5s, 2s);
 }
@@ -133,9 +136,6 @@ html, body {
 .footer-text {
   color: white;
   text-shadow: 1px 1px #000;
-  a {
-    color: #A8E4FF;
-  }
 }
 
 // Boxes
@@ -149,11 +149,14 @@ html, body {
   @include fade-in(0.5s, 2s);
 }
 
-// Background image
-html, body {
+// Background
+html {
+  background-color: rgba(214,214,214,1);
   background: url("../images/background_low.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+
+  visibility: hidden; // Do not show anything until content loads
 }
