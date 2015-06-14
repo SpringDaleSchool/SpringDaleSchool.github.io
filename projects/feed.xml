@@ -15,7 +15,10 @@ layout: null
       <item>
         <title>{{ project.title | xml_escape }}</title>
         <description>{{ project.content | xml_escape }}</description>
-        <repository>{{ project.repository }}</repository>
+        <repository>
+          <name>{{ project.repository.name | xml_escape }}</name>
+          <link>{{ project.repository.url }}</link>
+        </repository>
         <libraries>
           {% for lib in project.libraries %}
             <library>

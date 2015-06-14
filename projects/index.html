@@ -3,13 +3,15 @@ title: "Projects"
 layout: default
 ---
 
+{% if paginator.page == 1 %}
+  {% include projects-intro.html %}
+{% endif %}
+
 {% for post in paginator.posts  %}
 <div class="row">
   <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12 box">
     <h3>{{ post.title }}</h3>
-    <p>
       {{ post.content }}
-    </p>
     <div class="project-info">
       <p>
         <span class="glyphicon glyphicon-book" aria-hidden="true"></span>

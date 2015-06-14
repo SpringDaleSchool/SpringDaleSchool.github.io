@@ -5,9 +5,7 @@ TODO:
   - about.html
     - Breve aboutme
   - projects.html
-    - primer box de introducción (sólo si página == 1)
-    - incluir todos los proyectos
-    - fix bug url propias no coge layour de proyecto
+    - primer box de introducción
   - subir cv
   - cambiar mailto
   - cname
