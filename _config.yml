@@ -11,13 +11,13 @@ url: "jsidrach.github.io"
 # Articles per page
 paginate: 3
 # Makes pagination working
-paginate_path: /projects/page:num
+paginate_path: /projects/page-:num
 
 # Do not publish these files
 exclude: ["README.md", "CHANGELOG.md", "Gemfile", "Gemfile.lock", "LICENSE"]
 
 # Makes pretty (descriptive) permalinks.
-permalink: pretty
+permalink: /projects/:title
 
 # Sass configuration
 sass:
@@ -34,8 +34,8 @@ defaults:
       layout: "about"
   -
     scope:
-      path: "projects"
-      type: "pages"
+      path : ""
+      type: "posts"
     values:
       layout: "project"
       category: "project"
