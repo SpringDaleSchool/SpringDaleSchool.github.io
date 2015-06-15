@@ -6,7 +6,7 @@ description: "I make things"
 # The subpath of your site. Use "" if you're hosting a blog at the root level.
 baseurl: ""
 # The base hostname & protocol for your site.
-url: "jsidrach.github.io"
+url: "jsid.me"
 
 # Articles per page
 paginate: 3
