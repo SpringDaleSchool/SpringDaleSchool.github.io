@@ -15,7 +15,7 @@
   icon: jobs.png
 
 - name: CV
-  link: /data/cv.pdf
+  link: /public/data/cv_jsid.pdf
   icon: cv.png
 
 - name: Mail

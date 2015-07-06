@@ -158,6 +158,10 @@ body {
     .glyphicon {
       margin-right: 3px;
     }
+
+    p {
+      margin-top: 10px;
+    }
   }
 }
 
@@ -166,6 +170,11 @@ body {
 
   @include fade-in(0.5s, 2s);
 }
+
+p {
+  margin: 0;
+}
+
 
 .paginate {
   color: $link-color;
