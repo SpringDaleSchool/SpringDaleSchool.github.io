@@ -14,4 +14,4 @@ libraries:
     url: "https://jquery.com/"
 languages: [HTML, JavaScript, CSS]
 ---
-Personal portfolio theme for jekyll. Ready to be hosted on GitHub Pages.
+Personal portfolio theme for jekyll (powers this site). Ready to be hosted on GitHub Pages.
