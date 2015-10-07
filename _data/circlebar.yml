@@ -14,8 +14,8 @@
   link: https://es.linkedin.com/in/jsidrach
   icon: jobs.png
 
-- name: CV
-  link: /public/data/cv_jsid.pdf
+- name: Resume
+  link: /public/data/resume_jsid.pdf
   icon: cv.png
 
 - name: Mail
