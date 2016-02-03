@@ -2,22 +2,6 @@
   link: /
   icon: about.png
 
-- name: Projects
-  link: /projects
-  icon: projects.png
-
-- name: GitHub
-  link: https://github.com/jsidrach
-  icon: repo.png
-
-- name: LinkedIn
-  link: https://es.linkedin.com/in/jsidrach
-  icon: jobs.png
-
-- name: Resume
-  link: /public/data/resume_jsid.pdf
-  icon: cv.png
-
 - name: Mail
-  link: mailto:contact@jsid.me
+  link: mailto:sds_gzb@rediff.com
   icon: mail.png
