@@ -1,12 +1,12 @@
 # Title of the site
-title: "J. Sid"
+title: "Spring Dale School"
 # Description of the site
-description: "I make things"
+description: "A CBSE affiliated school"
 
 # The subpath of your site. Use "" if you're hosting a blog at the root level.
 baseurl: ""
 # The base hostname & protocol for your site.
-url: "jsid.me"
+url: "springdaleschool.github.io"
 
 # Articles per page
 paginate: 3
